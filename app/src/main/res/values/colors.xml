@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="com_text_color">#bababa</color>
+    <color name="com_button_color">#253950</color>
+    <color name="com_bg_color">#4f6a8f</color>
+
+    <color name="darkText">#181818</color>
+</resources>

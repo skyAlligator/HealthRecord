@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/com_bg_color">
+
+    <EditText
+        android:textColor="@color/com_text_color"
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:textColor="@color/com_text_color"
+        android:id="@+id/ui_login_registerBtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="44dp"
+        android:background="@color/com_button_color"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:textColor="@color/com_text_color"
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit1" />
+
+    <EditText
+        android:textColor="@color/com_text_color"
+        android:id="@+id/editText3"
+        android:layout_width="99dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Age"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+
+    <Spinner
+        android:textColor="@color/com_text_color"
+        android:id="@+id/planets_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/editText3"
+        app:layout_constraintTop_toTopOf="@+id/editText3" />
+
+    <Spinner
+        android:id="@+id/planets_spinner2"
+        android:layout_width="216dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/com_text_color"
+        android:text="I Agree the Terms and Conditions"
+        app:layout_constraintBottom_toTopOf="@+id/ui_login_registerBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
