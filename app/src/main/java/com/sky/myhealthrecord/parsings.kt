@@ -31,26 +31,26 @@ data class Transaction(var patientId: String?,
 
 class OuterData(val resources: List<InnerData>)
 
-class InnerData(val patientId: String, val recordType: String, val record: String,val timestamp:String)
+class InnerData(val patientId: String, val recordType: String, val record: String, val timestamp: String)
 
-fun getHistoryFromJson() {
+fun getHistoryFromJson(json: String): ArrayList<Transaction> {
 
-    val dataObj = Gson().fromJson<List<OuterData>>(transactionJson)
+    val dataObj = Gson().fromJson<List<OuterData>>(json)
     val transactionList = arrayListOf<Transaction>()
 
     for (obj in dataObj) {
         val rs = obj.resources[0]
 
         val replaced = rs.record.replace("'", "\"")
-        Log.d("parsing",replaced)
+        Log.d("parsing", replaced)
         val transactionObj = Gson().fromJson<Transaction>(replaced)
 
-        transactionObj.patientId= rs.patientId
-        transactionObj.recordType= rs.recordType
-        transactionObj.timestamp=rs.timestamp
+        transactionObj.patientId = rs.patientId
+        transactionObj.recordType = rs.recordType
+        transactionObj.timestamp = rs.timestamp
         transactionList.add(transactionObj)
     }
-
+    return transactionList
 }
 
 val transactionJson = """

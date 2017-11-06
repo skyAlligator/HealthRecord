@@ -1,9 +1,7 @@
 package com.sky.myhealthrecord
 
 import android.content.Context
-import android.content.Intent
 import android.graphics.Bitmap
-import android.support.design.widget.Snackbar
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -17,9 +15,6 @@ import com.nostra13.universalimageloader.core.ImageLoader
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration
 import com.nostra13.universalimageloader.core.assist.ImageScaleType
 import com.nostra13.universalimageloader.utils.StorageUtils
-import java.util.Collections.addAll
-import android.text.method.TextKeyListener.clear
-
 
 
 /**
@@ -27,8 +22,10 @@ import android.text.method.TextKeyListener.clear
  * 12:23 PM
  */
 
-enum class TransactionType{
-    REGISTER,ADMISSION,DISCHARGE, APPOINTMENT
+fun <T> T?.notNull(func: (T) -> Boolean) = if (this === null) false else func(this)
+
+enum class TransactionType {
+    REGISTER, ADMISSION, DISCHARGE, APPOINTMENT
 }
 
 fun Context.setupListProperties(recyclerView: RecyclerView) {

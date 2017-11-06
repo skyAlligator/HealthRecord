@@ -18,17 +18,6 @@
         android:textStyle="bold" />
 
 
-    <TextView
-        android:id="@+id/ui_item_history_dateTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="serif-monospace"
-        android:text="10-Aug-2017" />
-
-
     <!--<TextView
         android:id="@+id/ui_item_history_actionTV"
         android:layout_width="wrap_content"
@@ -55,4 +44,14 @@
         android:layout_marginTop="45dp"
         android:fontFamily="serif-monospace"
         android:text="Descriptions .........." />
+
+    <TextView
+        android:id="@+id/ui_item_history_dateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif-monospace"
+        android:text="10-Aug-2017" />
 </android.support.v7.widget.CardView>
